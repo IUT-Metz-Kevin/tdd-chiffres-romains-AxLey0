@@ -8,6 +8,7 @@ export class RomanNumeral {
     romanToInt(value: string): number {
         const romanNumerals: { [key: string]: number } = {
             'I': 1,
+            'V': 5,
         };
 
         let total = 0;
@@ -33,6 +34,8 @@ test.each([
     ["I", 1],
     ["II", 2],
     ["III", 3],
+    ["IV", 4],
+    ["V", 5],
     ])("Roman numeral %s should be %d", (roman, expected) => {
     const romanNumeral = new RomanNumeral();
     expect(romanNumeral.romanToInt(roman)).toBe(expected);
