@@ -1,5 +1,7 @@
 class RomanNumeral {
-    of(value: string): number {
+
+    
+    romanToInt(value: string): number {
         const romanNumerals: { [key: string]: number } = {
             'I': 1,
         };
@@ -21,4 +23,4 @@ class RomanNumeral {
 
         return total;
     }
-  }
+}
